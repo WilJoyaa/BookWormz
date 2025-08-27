@@ -1,10 +1,30 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 12px;
+    padding: 18px;
+    font-size: 18px;
+    background-color: #8f5f46;
+    margin: 0px;
+    font-family: "Oswald", 'Times New Roman';
+    border-radius: 0 0 8px 8px;
+}
+
+.sitename {
+    font-size: 32px;
 }
 
 .links {
     display: flex;
-    gap: 16px;
+    gap: 18px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
