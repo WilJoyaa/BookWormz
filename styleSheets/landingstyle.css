@@ -1,6 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    background-color:cornsilk;
 }
 
 .header {
@@ -27,4 +28,27 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+
+
+.personal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    align-items: center;
+    padding: 12px;
+}
+
+.personal.library {
+    font-size: 24px;
+    padding: 0px;
+}
+
+.personal.add {
+    padding: 6px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
