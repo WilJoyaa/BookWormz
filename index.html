@@ -10,24 +10,24 @@
     <title>BookWormz</title>
 </head>
 <body>
- <div class="header">
-    <div class="sitename">BookWormz</div>
-    <div class="links">
-        <a href="bookshelf.html">BookShelf</a>
-        <a href="about.html">About</a> 
-        <a href="profile.html">Profile</a>
-    </div>
-</div>
+<header>
+    <h1>BookWormz</h1>
+    <nav>
+      <a href="#">Bookshelf</a>
+      <a href="#">About</a>
+      <a href="#">Profile</a>
+    </nav>
+  </header>
 
-<div class="site content">
-    <div class="personal">
-        <div class="personal library">My BookShelf</div>
-        <button class="personal add" id="addBook">Add</button>
+  <div class="container">
+    <h2>📚 My Bookshelf</h2>
+    <div class="bookshelf">
+      <div class="book-card">
+        <div class="book-title">Dune</div>
+      </div>
     </div>
-    <div id="bookSpace">
-        Dune
-    </div>
-</div>
+    <button class="add-btn">➕ Add Book</button>
+  </div>
 
 <script src="pageScripts/bookAdd.js"></script>
 </body>
