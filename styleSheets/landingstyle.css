@@ -69,9 +69,10 @@ body {
       transform: translateY(-5px);
     }
 
-    .book-title {
+    .bookTitle {
       font-size: 1rem;
       font-weight: 600;
+      text-align: center;
     }
 
     /* Buttons */

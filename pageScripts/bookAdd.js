@@ -12,7 +12,7 @@ addBook.addEventListener('click', function(e) {
     const newBookCard = document.createElement("div");
     newBookCard.classList.add("book-card");
     const newBook = document.createElement("div");
-    newBook.classList.add("book-title");
+    newBook.classList.add("bookTitle");
     newBook.textContent = bookName;
 
     /* Add new book to bookshelf */
@@ -27,9 +27,12 @@ removeBook.addEventListener('click', function(e){
     let bookName = prompt("Please enter the book you want to remove");
 
     /* get bookshelf and all book cards */
-    const bookShelf = document.getElementById("#bookSpace");
+    const bookShelf = document.querySelector("#bookSpace");
     const cards = bookShelf.children;
 
-
-    
+    for ( let i = 0; i < cards.length; i++ ){
+        if (bookName == cards[i].textContent){
+            bookShelf.removeChild(cards[i]);
+        }
+    }
 })
