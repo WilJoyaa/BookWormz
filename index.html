@@ -20,13 +20,18 @@
   </header>
 
   <div class="container">
-    <h2>📚 My Bookshelf</h2>
-    <div class="bookshelf">
-      <div class="book-card">
-        <div class="book-title">Dune</div>
+    <div class="header nav">
+      <h2>My Bookshelf</h2>
+      <div class="btnContainer">
+        <button class="btns" id="addBook">Add Book</button>
+        <button class="btns" id="removeBook">Remove Book</button>
       </div>
     </div>
-    <button class="add-btn">➕ Add Book</button>
+    <div class="bookshelf" id="bookSpace">
+      <div class="book-card">
+        <div class="book-title" id="bookName">Dune</div>
+      </div>
+    </div>
   </div>
 
 <script src="pageScripts/bookAdd.js"></script>
