@@ -23,16 +23,21 @@ addBook.addEventListener('click', function(e) {
 
 /* Remove Book method */
 removeBook.addEventListener('click', function(e){
-    /* Retrieve book name */
-    let bookName = prompt("Please enter the book you want to remove");
+    /* book count checker */
+    if (cards.length == 0){
+        alert("No books to remove!");
+    } else {
+        /* Retrieve book name */
+        let bookName = prompt("Please enter the book you want to remove");
 
-    /* get bookshelf and all book cards */
-    const bookShelf = document.querySelector("#bookSpace");
-    const cards = bookShelf.children;
-
-    for ( let i = 0; i < cards.length; i++ ){
-        if (bookName == cards[i].textContent){
-            bookShelf.removeChild(cards[i]);
-        }
-    }
+        /* get bookshelf and all book cards */
+        const bookShelf = document.querySelector("#bookSpace");
+        const cards = bookShelf.children;
+            
+            /* book remover */
+            for ( let i = 0; i < cards.length; i++ ){
+                if (bookName == cards[i].textContent){
+                    bookShelf.removeChild(cards[i]);
+                }
+            }}
 })
