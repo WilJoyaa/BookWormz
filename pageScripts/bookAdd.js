@@ -5,19 +5,32 @@ const librarySpace = document.querySelector('#bookSpace')
 
 /* Add book method */
 addBook.addEventListener('click', function(e) {
-    /* Retrieve book name */
+    /* check for valid input */
     let bookName = prompt("Please enter a book name");
+    if (bookName.trim() == null || bookName.trim() == ""){
+        alert("please enter a valid book");
+    } else {
+        /* existing book checker */
+        const bookShelf = document.querySelector("#bookSpace");
+        const cards = bookShelf.children;
+                for ( let i = 0; i < cards.length; i++ ){
+                    if (bookName.toLowerCase().trim() == cards[i].textContent.toLowerCase().trim()){
+                        alert(bookName + " is already in your library!");
+                        return;
+                    }
+                }
 
-    /* Create new book element */
-    const newBookCard = document.createElement("div");
-    newBookCard.classList.add("book-card");
-    const newBook = document.createElement("div");
-    newBook.classList.add("bookTitle");
-    newBook.textContent = bookName;
+        /* Create new book element */
+        const newBookCard = document.createElement("div");
+        newBookCard.classList.add("book-card");
+        const newBook = document.createElement("div");
+        newBook.classList.add("bookTitle");
+        newBook.textContent = bookName.trim();
 
-    /* Add new book to bookshelf */
-    newBookCard.appendChild(newBook);
-    librarySpace.appendChild(newBookCard);
+        /* Add new book to bookshelf */
+        newBookCard.appendChild(newBook);
+        librarySpace.appendChild(newBookCard);
+    } 
 })
 
 
