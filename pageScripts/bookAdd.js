@@ -2,6 +2,15 @@ const addBook = document.querySelector('#addBook')
 const removeBook = document.querySelector('#removeBook')
 const librarySpace = document.querySelector('#bookSpace')
 
+/* Book Object */
+const bookObj = {
+    bookName: null, 
+    bookAuthor: null,
+    bookPages: null,
+    userPages: null,
+    bookId: null,
+};
+
 
 /* Add book method */
 addBook.addEventListener('click', function(e) {
