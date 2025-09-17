@@ -28,8 +28,8 @@
       </div>
     </div>
     <div class="bookshelf" id="bookSpace">
-      <form action="pageScripts/bookAdd.js" method="post" id="bookForm">
-        <h1 id="formHeader">Book Info</h1>
+        <form action="pageScripts/bookAdd.js" method="post" id="bookForm">
+        <h1 class="form header info">Book Info</h1>
           <label for="book_name">Book Name</label> <br>
           <input type="text" id="book_name" placeholder="Super Cool Book">
 
@@ -40,7 +40,7 @@
 
           <br>
 
-          <h1 id="completionStatus">Completion Status</h1>
+          <h1 class="form header status">Completion Status</h1>
           <label for="total_pages">Total Amount of Pages</label> <br>
           <input type="number" id="total_pages" placeholder="999">
 
@@ -69,13 +69,12 @@
 
           <br>
 
-          <label for="read_pages">Pages Read</label> <br>
-          <input type="number" id="read_pages" placeholder="123">
+          <label class="readPages" for="read_pages">Pages Read</label> <br>
+          <input class="readPages" type="number" id="read_pages" placeholder="123">
 
-          <br>
+          <div id="bottomBreak"></div>
+        </form>
 
-          
-      </form>
     </div>
   </div>
 

@@ -99,5 +99,28 @@ body {
 
     /* Book Form */
     #bookForm {
+      display: none;
       position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%,50%);
+      padding: 1rem 7rem;
+      background-color: #D2B48C;
+      border-radius: 20px;
+      width: 350px;
     }
+
+    .form.header {
+      margin: 35px 0px;
+      margin-bottom: 10px;
+    }
+    
+    #bottomBreak {
+      margin-bottom: 35px;
+    }
+
+    .readPages {
+      display: none;
+    }
+
+
