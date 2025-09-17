@@ -28,7 +28,54 @@
       </div>
     </div>
     <div class="bookshelf" id="bookSpace">
-    
+      <form action="pageScripts/bookAdd.js" method="post" id="bookForm">
+        <h1 id="formHeader">Book Info</h1>
+          <label for="book_name">Book Name</label> <br>
+          <input type="text" id="book_name" placeholder="Super Cool Book">
+
+          <br>
+
+          <label for="author_name">Author Name</label> <br>
+          <input type="text" id="author_name" placeholder="John Smith">
+
+          <br>
+
+          <h1 id="completionStatus">Completion Status</h1>
+          <label for="total_pages">Total Amount of Pages</label> <br>
+          <input type="number" id="total_pages" placeholder="999">
+
+          <br>
+
+          <fieldset>
+            <legend>Current Reading Status</legend>
+              <input type="radio" id="read" name="read_status">
+              <label for="read">Read</label>
+
+              <br>
+
+              <input type="radio" id="currently" name="read_status">
+              <label for="currently">Currently Reading</label>
+
+              <br>
+
+              <input type="radio" id="planning" name="read_status">
+              <label for="planning">Planning to Read</label>
+
+              <br>
+
+              <input type="radio" id="backlog" name="read_status">
+              <label for="backlog">Backlog</label>
+          </fieldset>
+
+          <br>
+
+          <label for="read_pages">Pages Read</label> <br>
+          <input type="number" id="read_pages" placeholder="123">
+
+          <br>
+
+          
+      </form>
     </div>
   </div>
 

@@ -96,3 +96,8 @@ body {
     .btns:hover {
       background: #a4714a;
     }
+
+    /* Book Form */
+    #bookForm {
+      position: absolute;
+    }
