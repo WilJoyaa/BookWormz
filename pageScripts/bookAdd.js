@@ -8,7 +8,6 @@ const bookObj = {
     bookAuthor: null,
     bookPages: null,
     userPages: null,
-    readStatus: null,
     bookId: null,
 };
 
