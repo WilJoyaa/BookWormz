@@ -5,6 +5,11 @@ body {
       color: #2c2c2c;
     }
 
+  #root {
+    padding: 0;
+    margin: 0;
+  }
+
     /* Header */
     header {
       background-color: #8b5e3c;
